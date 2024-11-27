@@ -9761,6 +9761,13 @@ textarea.form-control-lg {
   .text-sm-center {
     text-align: center !important;
   }
+  .fp{
+    position: relative;
+    left: 10px;
+    text-align: end;
+    width: 50px;
+    font-size: 10px;
+  }
 }
 @media (min-width: 768px) {
   .float-md-start {
