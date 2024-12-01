@@ -338,7 +338,9 @@ a:hover {
 }
 
 form {
- 
+  background: linear-gradient(109.6deg, rgb(255, 230, 109) 11.2%, rgb(87, 232, 107) 100.2%);
+
+
   padding: 20px;
  
   border-radius: 8px;
@@ -2208,6 +2210,10 @@ section, .section {
   padding-left: 5px;
 }
 
+
+
+
+
 /*--------------------------------------------------------------
 # Blog Comments Section
 --------------------------------------------------------------*/
@@ -3349,7 +3355,7 @@ section, .section {
   position: relative;
   width: 60%;
   top: 5px;
-  right: 170%;
+  right: 184%;
 }
 
 
@@ -3484,7 +3490,7 @@ section, .section {
   position: relative;
   width: 60%;
   top: 5px;
-  right: 160%;
+  right: 184%;
 }
 
 
@@ -3619,7 +3625,7 @@ section, .section {
   position: relative;
   width: 60%;
   top: 5px;
-  right: 140%;
+  right: 165%;
 }
 
 
@@ -3772,7 +3778,7 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   position: relative;
   width: 60%;
   top: 5px;
-  right: 174%;
+  right: 180%;
 }
 
 
@@ -4376,7 +4382,7 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   position: relative;
   width: 60%;
   top: 5px;
-  right: 160%;
+  right: 185%;
 }
 
 .logo-container {
@@ -4532,7 +4538,7 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   position: relative;
   width: 60%;
   top: 5px;
-  right: 160%;
+  right: 185%;
 }
 
 .logo-container {

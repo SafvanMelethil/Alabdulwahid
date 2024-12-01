@@ -78,7 +78,7 @@
     </h1>
     <nav class="breadcrumbs">
       <ol>
-        <span><a href="index.html"</a>الرئيسية</span>
+       
         </li>
       </ol>
     </nav>
@@ -87,123 +87,235 @@
 
 
 
-    <style>
-       
-        .container {
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-        }
-        .card {
-            direction: rtl;
-            background: #ffffff;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .btn {
-            padding: 10px 20px;
-            margin: 5px 0;
-            background: #00c424;
-            color: #ffffff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
-        .delete-btn {
-            background: #dc3545;
-        }
-        .delete-btn:hover {
-            background: #b02a37;
-        }
-        .top-right {
-            position: absolute;
-            bottom: 100%;
-            left: 10px;
-        }
-    </style>
+<style>
+  .sontainer {
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      direction: rtl; /* Right-to-left layout */
+      font-family: Arial, sans-serif;
+  }
+
+  .add-button {
+      margin-bottom: 15px;
+      padding: 10px 20px;
+      background-color: #00c424;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  .add-button:hover {
+      background-color: #0056b3;
+  }
+
+  .add-button i {
+      margin-left: 8px;
+      font-size: 20px;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: right;
+  }
+
+  table th,
+  table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      vertical-align: middle;
+  }
+
+  table th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+  }
+
+  .btn {
+      padding: 5px 10px;
+      background: #00c424;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+  }
+
+  .btn:hover {
+      background: #0056b3;
+  }
+
+  .delete-btn {
+      background: #dc3545;
+  }
+
+  .delete-btn:hover {
+      background: #b02a37;
+  }
+
+  .empty-message {
+      text-align: center;
+      color: #999;
+      margin-top: 10px;
+  }
+
+  .action-buttons {
+      display: flex;
+      gap: 5px;
+      justify-content: flex-start;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        
-        <a href="index2.html" class="btn top-right">إضافة تفاصيل جديدة +</a>
-        <div id="detailsGrid" class="grid"></div>
-    </div>
+<div class="sontainer">
+  <!-- Add New Marriage Details Button -->
+  <a href="index2.html" class="add-button">
+      <i>+</i> إضافة تفاصيل زواج جديدة
+  </a>
 
-    <script>
-        // Retrieve marriage details from localStorage
-        let marriageDetails = JSON.parse(localStorage.getItem('marriageDetails')) || [];
-        const detailsGrid = document.getElementById('detailsGrid');
+  <!-- Marriage Details Table -->
+  <table>
+      <thead>
+          <tr>
+              <th>رقم</th> <!-- Serial Number -->
+              <th>الاسم الأول</th>
+              <th>اسم الأب</th>
+              <th>اسم الجد</th>
+              <th>الفخذ</th>
+              <th>القرية</th>
+              <th>تاريخ المناسبة</th>
+              <th>اليوم</th>
+              <th>مدينة المناسبة</th>
+              <th>اسم القاعة</th>
+              <th>عنوانها</th>
+              <th>اسم والد العروس الثلاثة</th>
+              <th>قريته</th>
+              <th>الإجراءات</th> <!-- Actions -->
+          </tr>
+      </thead>
+      <tbody id="detailsTableBody">
+          <!-- Dynamic Rows will be inserted here -->
+      </tbody>
+  </table>
+</div>
 
-        // Render marriage details
-        function renderDetails() {
-            detailsGrid.innerHTML = ''; // Clear existing content
+<script>
+  // Preload data into localStorage if it doesn't exist
+  if (!localStorage.getItem('marriageDetails')) {
+      const defaultMarriageDetails = [
+          {
+              'الاسم الأول': 'محمد',
+              'اسم الأب': 'أحمد',
+              'اسم الجد': 'حسن',
+              'الفخذ': 'القبيلة',
+              'القرية': 'المدينة',
+              'تاريخ المناسبة': '2024-12-01',
+              'اليوم': 'الأحد',
+              'مدينة المناسبة ': 'الرياض',
+              'اسم القاعة': 'قاعة الاحتفالات',
+              'عنوانها': 'شارع الملك',
+              'اسم والد العروس الثلاثة': 'عبدالله بن عمر',
+              'قريته': 'قرية النور'
+          },
+          {
+              'الاسم الأول': 'عبدالله',
+              'اسم الأب': 'سعيد',
+              'اسم الجد': 'علي',
+              'الفخذ': 'الأسرة',
+              'القرية': 'النور',
+              'تاريخ المناسبة': '2024-11-30',
+              'اليوم': 'السبت',
+              'مدينة المناسبة ': 'جدة',
+              'اسم القاعة': 'قاعة السلام',
+              'عنوانها': 'طريق البحر',
+              'اسم والد العروس الثلاثة': 'يحيى بن عثمان',
+              'قريته': 'قرية الفلاح'
+          }
+      ];
+      localStorage.setItem('marriageDetails', JSON.stringify(defaultMarriageDetails));
+  }
 
-            if (marriageDetails.length === 0) {
-                detailsGrid.innerHTML = '<p>لا توجد تفاصيل.</p>'; // Empty message
-                return;
-            }
+  // Retrieve and display data from localStorage
+  const marriageDetails = JSON.parse(localStorage.getItem('marriageDetails'));
 
-            marriageDetails.forEach((detail, index) => {
-                const card = document.createElement('div');
-                card.className = 'card';
+  // Function to render data
+  function renderDetails() {
+      const tableBody = document.getElementById('detailsTableBody');
+      tableBody.innerHTML = '';
 
-                for (const [key, value] of Object.entries(detail)) {
-                    const p = document.createElement('p');
-                    p.textContent = `${key}: ${value}`;
-                    card.appendChild(p);
-                }
+      if (!marriageDetails.length) {
+          tableBody.innerHTML = '<tr><td colspan="13">لا توجد تفاصيل.</td></tr>';
+          return;
+      }
 
-                // Edit button
-                const editBtn = document.createElement('button');
-                editBtn.textContent = 'تعديل';
-                editBtn.className = 'btn';
-                editBtn.onclick = () => editDetail(index);
+      marriageDetails.forEach((detail, index) => {
+          const row = document.createElement('tr');
+          
+          // Add index as a serial number
+          const serialCell = document.createElement('td');
+          serialCell.textContent = index + 1;
+          row.appendChild(serialCell);
 
-                // Delete button
-                const deleteBtn = document.createElement('button');
-                deleteBtn.textContent = 'حذف';
-                deleteBtn.className = 'btn delete-btn';
-                deleteBtn.onclick = () => deleteDetail(index);
+          // Add detail values
+          for (const key in detail) {
+              const cell = document.createElement('td');
+              cell.textContent = detail[key];
+              row.appendChild(cell);
+          }
 
-                card.appendChild(editBtn);
-                card.appendChild(deleteBtn);
+          // Add edit button
+          const editCell = document.createElement('td');
+          const editBtn = document.createElement('button');
+          editBtn.textContent = 'تعديل';
+          editBtn.className = 'btn';
+          editBtn.onclick = () => editDetail(index);
+          editCell.appendChild(editBtn);
 
-                detailsGrid.appendChild(card);
-            });
-        }
+          // Add delete button
+          const deleteCell = document.createElement('td');
+          const deleteBtn = document.createElement('button');
+          deleteBtn.textContent = 'حذف';
+          deleteBtn.className = 'btn delete-btn';
+          deleteBtn.onclick = () => deleteDetail(index);
+          deleteCell.appendChild(deleteBtn);
 
-        // Edit detail
-        function editDetail(index) {
-            const detail = marriageDetails[index];
-            localStorage.setItem('editIndex', index); // Save index for editing
-            localStorage.setItem('editDetail', JSON.stringify(detail));
-            window.location.href = 'index2.html';
-        }
+          // Append buttons to row
+          row.appendChild(editCell);
+          row.appendChild(deleteCell);
 
-        // Delete detail
-        function deleteDetail(index) {
-            if (confirm('هل أنت متأكد من حذف هذه التفاصيل؟')) {
-                marriageDetails.splice(index, 1);
-                localStorage.setItem('marriageDetails', JSON.stringify(marriageDetails));
-                renderDetails(); // Re-render the details
-            }
-        }
+          tableBody.appendChild(row);
+      });
+  }
 
-        // Initial render
-        renderDetails();
-    </script>
+  // Edit detail function
+  function editDetail(index) {
+      const detail = marriageDetails[index];
+      localStorage.setItem('editIndex', index); // Save the index for editing
+      localStorage.setItem('editDetail', JSON.stringify(detail));
+      window.location.href = 'index2.html'; // Navigate to the edit page
+  }
+
+  // Delete detail function
+  function deleteDetail(index) {
+      if (confirm('هل أنت متأكد من حذف هذه التفاصيل؟')) {
+          marriageDetails.splice(index, 1);
+          localStorage.setItem('marriageDetails', JSON.stringify(marriageDetails));
+          renderDetails(); // Re-render the table
+      }
+  }
+
+  // Initial render
+  renderDetails();
+</script>
+
+</body>
+
 
 <footer id="footer" class="footer dark-background">
 
