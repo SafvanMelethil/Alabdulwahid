@@ -3924,7 +3924,7 @@ section, .section {
 
   .middle-text{
     position: relative;
-    font-size: 19px;
+    font-size: 12px;
   
     text-align: center;
     color: #ae0000;
@@ -4054,7 +4054,7 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   position: relative;
   width: 60%;
   top: 5px;
-  right: 180%;
+  right: 138%;
 }
 
 
