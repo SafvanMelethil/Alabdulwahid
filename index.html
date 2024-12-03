@@ -233,6 +233,262 @@
 
 
       <!-- Services 2 Section -->
+
+      <style>
+        .perry-container {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+        }
+    
+        .perry {
+            display: flex;
+            animation: scroll-right 10s linear infinite;
+            white-space: nowrap;
+        }
+    
+        .perry img {
+            width: 400px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+    
+        .perry img:hover {
+            transform: scale(1.1);
+        }
+    
+        @keyframes scroll-right {
+            from {
+                transform: translateX(-100%); /* Start outside the left edge */
+            }
+            to {
+                transform: translateX(100%); /* Move to outside the right edge */
+            }
+        }
+    
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 80%;
+        }
+    
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    
+        .close:hover,
+        .close:focus {
+            color: #ccc;
+            text-decoration: none;
+        }
+    </style>
+    
+    <div class="perry-container">
+        <div class="perry" id="perry">
+            <!-- Certificate images -->
+            <img src="assets/img/touch of loyality  copy/01.jpeg" alt="Certificate 1" onclick="openModal(this)">
+            <img src="assets/img/touch of loyality  copy/10.jpeg" alt="Certificate 1" onclick="openModal(this)">
+            <img src="assets/img/touch of loyality  copy/11.jpeg" alt="Certificate 2" onclick="openModal(this)">
+            <img src="assets/img/touch of loyality  copy/12.jpeg" alt="Certificate 3" onclick="openModal(this)">
+            <img src="assets/img/touch of loyality  copy/2.jpeg" alt="Certificate 1" onclick="openModal(this)">
+            <img src="assets/img/touch of loyality  copy/21.jpeg" alt="Certificate 1" onclick="openModal(this)">
+            <img src="assets/img/touch of loyality  copy/22.jpeg" alt="Certificate 2" onclick="openModal(this)">
+            <img src="assets/img/touch of loyality  copy/23.jpeg" alt="Certificate 3" onclick="openModal(this)">
+        </div>
+    </div>
+    
+    <!-- Modal for enlarged image -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content" />
+    </div>
+    
+    <script>
+        // Pause the animation on mouse hover
+        const perry = document.getElementById('perry');
+    
+        perry.addEventListener('mouseover', () => {
+            perry.style.animationPlayState = 'paused';
+        });
+    
+        perry.addEventListener('mouseout', () => {
+            perry.style.animationPlayState = 'running';
+        });
+    
+        // Open the modal
+        function openModal(imgElement) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
+    
+            modal.style.display = "block";
+            modalImg.src = imgElement.src; // Set modal image source to the clicked image
+        }
+    
+        // Close the modal
+        function closeModal() {
+            const modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+    
+
+
+<style>
+  .marry-container {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+  }
+
+  .marry {
+      display: flex;
+      animation: scroll-right 10s linear infinite;
+      white-space: nowrap;
+  }
+
+  .marry img {
+      width: 400px;
+      height: auto;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+  }
+
+  .marry img:hover {
+      transform: scale(1.1);
+  }
+
+  @keyframes scroll-right {
+      from {
+          transform: translateX(-100%); /* Start outside the left edge */
+      }
+      to {
+          transform: translateX(100%); /* Move to outside the right edge */
+      }
+  }
+
+  /* Modal styles */
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 80%;
+  }
+
+  .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+      color: #ccc;
+      text-decoration: none;
+  }
+</style>
+
+<div class="marry-container">
+  <div class="marry" id="marry">
+      <!-- Certificate images -->
+      <img src="newline/01.jpeg" alt="Certificate 1" onclick="openModal(this)">
+      <img src="newline/02.jpeg" alt="Certificate 1" onclick="openModal(this)">
+      <img src="newline/03.jpeg" alt="Certificate 2" onclick="openModal(this)">
+      <img src="newline/04.jpeg" alt="Certificate 3" onclick="openModal(this)">
+      <img src="newline/05.jpeg" alt="Certificate 1" onclick="openModal(this)">
+      <img src="newline/06.jpeg" alt="Certificate 1" onclick="openModal(this)">
+      <img src="newline/07.jpeg" alt="Certificate 2" onclick="openModal(this)">
+      <img src="newline/08.jpeg" alt="Certificate 3" onclick="openModal(this)">
+      <img src="newline/09.jpeg" alt="Certificate 1" onclick="openModal(this)">
+      <img src="newline/10.jpeg" alt="Certificate 1" onclick="openModal(this)">
+      <img src="newline/11.jpeg" alt="Certificate 2" onclick="openModal(this)">
+      <img src="newline/12.jpeg" alt="Certificate 3" onclick="openModal(this)">
+      <img src="newline/13.jpeg" alt="Certificate 1" onclick="openModal(this)">
+      <img src="newline/14.jpeg" alt="Certificate 1" onclick="openModal(this)">
+  </div>
+</div>
+
+<!-- Modal for enlarged image -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" class="modal-content" />
+</div>
+
+<script>
+  // Pause the animation on mouse hover
+  const marry = document.getElementById('marry');
+
+  marry.addEventListener('mouseover', () => {
+      marry.style.animationPlayState = 'paused';
+  });
+
+  marry.addEventListener('mouseout', () => {
+      marry.style.animationPlayState = 'running';
+  });
+
+  // Open the modal
+  function openModal(imgElement) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+
+      modal.style.display = "block";
+      modalImg.src = imgElement.src; // Set modal image source to the clicked image
+  }
+
+  // Close the modal
+  function closeModal() {
+      const modal = document.getElementById("imageModal");
+      modal.style.display = "none";
+  }
+</script>
+
+    
     
       <style>
         .carry-container {
@@ -296,72 +552,7 @@
       
       <!-- /Services 2 Section -->
 
-      <style>
-        .perry-container {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            overflow: hidden;
-            position: relative;
-        }
-    
-        .perry {
-            display: flex;
-            animation: scroll-right 10s linear infinite;
-            white-space: nowrap;
-        }
-    
-        .perry img {
-            width: 400px;
-            height: auto;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-    
-        .perry img:hover {
-            transform: scale(1.1);
-        }
-    
-        @keyframes scroll-right {
-            from {
-                transform: translateX(-100%); /* Start outside the left edge */
-            }
-            to {
-                transform: translateX(100%); /* Move to outside the right edge */
-            }
-        }
-    </style>
-    
-    <div class="perry-container">
-        <div class="perry" id="perry">
-            <!-- Certificate images -->
-            <img src="assets/img/touch of loyality  copy/01.jpeg" alt="Certificate 1">
-            <img src="assets/img/touch of loyality  copy/10.jpeg" alt="Certificate 1">
-            <img src="assets/img/touch of loyality  copy/11.jpeg" alt="Certificate 2">
-            <img src="assets/img/touch of loyality  copy/12.jpeg" alt="Certificate 3">
-            <img src="assets/img/touch of loyality  copy/2.jpeg" alt="Certificate 1">
-            <img src="assets/img/touch of loyality  copy/21.jpeg" alt="Certificate 1">
-            <img src="assets/img/touch of loyality  copy/22.jpeg" alt="Certificate 2">
-            <img src="assets/img/touch of loyality  copy/23.jpeg" alt="Certificate 3">
-        </div>
-    </div>
-    
-    <script>
-        // Pause the animation on mouse hover
-        const perry = document.getElementById('perry');
-    
-        perry.addEventListener('mouseover', () => {
-            perry.style.animationPlayState = 'paused';
-        });
-    
-        perry.addEventListener('mouseout', () => {
-            perry.style.animationPlayState = 'running';
-        });
-    </script>
-    
-    
+      
 
     <!-- Services Section -->
     <section id="services" class="services section">
