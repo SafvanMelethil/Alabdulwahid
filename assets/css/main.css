@@ -62,8 +62,7 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   font-family: var(--default-font);
 }
 
@@ -254,8 +253,7 @@ a:hover {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -298,9 +296,12 @@ a:hover {
 }
 
 .middle-text {
+  font-family: 'DroidArabicKufiRegular';
+  font-weight: bold;
   position: relative;
   text-align: center;
-  font-size: 30px;
+  font-size: 19px;
+  font-weight: bold;
   color: #ae0000;
   left: 7%;
 }
@@ -1434,8 +1435,8 @@ section, .section {
 }
 
 .about .content {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  border-radius: 150px;
+  background-image: linear-gradient(to right, #558d83 0%, #9face6 100%);
   padding: 7rem 0;
 }
 
@@ -2969,6 +2970,8 @@ section, .section {
     }
   
     .middle-text{
+      font-family: 'DroidArabicKufiRegular';
+      font-weight: bold;
       position: static;
       font-size: 20px;
       text-align: center;
@@ -3008,6 +3011,8 @@ section, .section {
     }
   
     .middle-text{
+      font-family: 'DroidArabicKufiRegular';
+      font-weight: bold;
       position: static;
       font-size: 15px;
     
@@ -3104,6 +3109,8 @@ section, .section {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: static;
     font-size: 10px;
   
@@ -3237,6 +3244,8 @@ section, .section {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 20px;
   
@@ -3373,6 +3382,8 @@ section, .section {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 20px;
   
@@ -3507,6 +3518,8 @@ section, .section {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 15px;
   
@@ -3644,6 +3657,8 @@ section, .section {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 15px;
   
@@ -3780,6 +3795,8 @@ section, .section {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 15px;
   
@@ -3923,6 +3940,8 @@ section, .section {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 12px;
   
@@ -4071,6 +4090,8 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 18px;
   
@@ -4214,6 +4235,8 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 18px;
   
@@ -4371,6 +4394,8 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 18px;
   
@@ -4527,6 +4552,8 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 18px;
   
@@ -4684,6 +4711,8 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   }
 
   .middle-text{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: bold;
     position: relative;
     font-size: 18px;
     text-align: center;
@@ -4830,10 +4859,3 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 
 
 }
-
-
-
-
-
-
-
