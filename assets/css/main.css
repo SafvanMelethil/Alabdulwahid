@@ -3244,6 +3244,7 @@ section, .section {
   }
 
   .middle-text{
+    left: -40px;
     font-family: 'DroidArabicKufiRegular';
     font-weight: bold;
     position: relative;
@@ -3254,17 +3255,19 @@ section, .section {
   
   }
 
-  .logo-container p{
+  .logo-container {
     position: relative;
-    margin: 0;
-    font-size: 10px;
-    left: 18px;
-  }
+    left: 66%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
 
   .logo-container img{
     position: relative;
-    left: 20px;
-    width: 70%;
+    left: 19px;
+    width: 50%;
     height: 40%;
     border-radius: 10%;
     object-fit: cover;
@@ -3346,7 +3349,7 @@ section, .section {
 .right-button {
   position: absolute; /* Positioning relative to the container */
   bottom: -27%; /* Distance from the bottom of the container */
-  left: 79%; /* Distance from the left of the container */
+  left: 77%; /* Distance from the left of the container */
   background-color: #0daa1a; /* Button color */
   color: #ffffff; /* Text color */
   border: none;
@@ -3363,9 +3366,9 @@ section, .section {
 
 .navlogo{
   position: relative;
-  width: 40%;
+  width: 74%;
   top: 5px;
-  right: 130%;
+  right: 220%;
 }
 
 
@@ -3382,6 +3385,7 @@ section, .section {
   }
 
   .middle-text{
+    left: -40px;
     font-family: 'DroidArabicKufiRegular';
     font-weight: bold;
     position: relative;
@@ -3392,17 +3396,19 @@ section, .section {
   
   }
 
-  .logo-container p{
+  .logo-container {
     position: relative;
-    margin: 0;
-    font-size: 10px;
-    left: 18px;
-  }
+    left: 66%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
 
   .logo-container img{
     position: relative;
-    left: 20px;
-    width: 70%;
+    left: 19px;
+    width: 50%;
     height: 40%;
     border-radius: 10%;
     object-fit: cover;
@@ -3483,32 +3489,33 @@ section, .section {
 
 .right-button {
   position: absolute; /* Positioning relative to the container */
-  bottom: -32%; /* Distance from the bottom of the container */
-  left: 74%; /* Distance from the left of the container */
+  bottom: -27%; /* Distance from the bottom of the container */
+  left: 69%; /* Distance from the left of the container */
   background-color: #0daa1a; /* Button color */
   color: #ffffff; /* Text color */
   border: none;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .right-button:hover {
   background-color: #74b9fd; /* Darker shade on hover */
 }
 
 .navlogo{
   position: relative;
-  width: 45%;
+  width: 74%;
   top: 5px;
-  right: 137%;
+  right: 220%;
 }
 
 
 
-}
 
+}
 @media only screen and (max-width: 644px) {
   .tab{
     flex: 1;
@@ -3938,12 +3945,20 @@ section, .section {
     position: relative;
     font-size: 14px;
   }
+  .logo-container {
+    position: relative;
+    left: 64%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
   .middle-text{
+    left: -87px;
     font-family: 'DroidArabicKufiRegular';
     font-weight: bold;
     position: relative;
-    font-size: 12px;
+    font-size: 19px;
   
     text-align: center;
     color: #ae0000;
@@ -3960,7 +3975,7 @@ section, .section {
   .logo-container img{
     position: relative;
     left: 20px;
-    width: 70%;
+    width: 35%;
     height: 40%;
     border-radius: 10%;
     object-fit: cover;
@@ -4071,9 +4086,9 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 }
 .navlogo{
   position: relative;
-  width: 39%;
+  width: 60%;
   top: 5px;
-  right: 95%;
+  right: 215%;
 }
 
 
@@ -4090,6 +4105,7 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   }
 
   .middle-text{
+    left: -91px;
     font-family: 'DroidArabicKufiRegular';
     font-weight: bold;
     position: relative;
@@ -4109,8 +4125,8 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 
   .logo-container img{
     position: relative;
-    left: 20px;
-    width: 70%;
+    left: 19px;
+    width: 33%;
     height: 40%;
     border-radius: 10%;
     object-fit: cover;
@@ -4204,12 +4220,12 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 
 .right-button {
   position: absolute; /* Positioning relative to the container */
-  bottom: -27%; /* Distance from the bottom of the container */
-  left: 83%; /* Distance from the left of the container */
+  bottom: -16%; /* Distance from the bottom of the container */
+  left: 76%; /* Distance from the left of the container */
   background-color: #0daa1a; /* Button color */
   color: #ffffff; /* Text color */
   border: none;
-  padding: 20px 40px;
+  padding: 5px 40px;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
@@ -4221,10 +4237,20 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 }
 .navlogo{
   position: relative;
-  width: 40%;
+  width: 69%;
   top: 5px;
-  right: 125%;
+  right: 222%;
 }
+
+.logo-container {
+  position: relative;
+  left: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 }
 @media only screen and (min-width: 1212px) {
   .tab{
@@ -4235,6 +4261,7 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   }
 
   .middle-text{
+    left: -96px;
     font-family: 'DroidArabicKufiRegular';
     font-weight: bold;
     position: relative;
@@ -4254,8 +4281,8 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 
   .logo-container img{
     position: relative;
-    left: 20px;
-    width: 70%;
+    left: 18px;
+    width:0%;
     height: 40%;
     border-radius: 10%;
     object-fit: cover;
@@ -4349,12 +4376,12 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 
 .right-button {
   position: absolute; /* Positioning relative to the container */
-  bottom: -27%; /* Distance from the bottom of the container */
-  left: 80%; /* Distance from the left of the container */
+  bottom: -18%; /* Distance from the bottom of the container */
+  left: 82%; /* Distance from the left of the container */
   background-color: #0daa1a; /* Button color */
   color: #ffffff; /* Text color */
   border: none;
-  padding: 20px 40px;
+  padding: 7px 40px;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
@@ -4366,14 +4393,14 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 }
 .navlogo{
   position: relative;
-  width: 60%;
+  width: 73%;
   top: 5px;
-  right: 160%;
+  right: 246%;
 }
 
 .logo-container {
   position: relative;
-  left: 75%;
+  left: 66%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4394,6 +4421,7 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   }
 
   .middle-text{
+
     font-family: 'DroidArabicKufiRegular';
     font-weight: bold;
     position: relative;
@@ -4541,165 +4569,6 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 
 
 
-
-}
-@media only screen and (min-width: 1212px) {
-  .tab{
-    flex: 1;
-    text-align: center;
-    position: relative;
-    font-size: 20px;
-  }
-
-  .middle-text{
-    font-family: 'DroidArabicKufiRegular';
-    font-weight: bold;
-    position: relative;
-    font-size: 18px;
-  
-    text-align: center;
-    color: #ae0000;
-  
-  }
-
-  .logo-container p{
-    position: relative;
-    margin: 0;
-    font-size: 18px;
-    left: 20px;
-  }
-
-  .logo-container img{
-    position: relative;
-    left: 20px;
-    width: 70%;
-    height: 40%;
-    border-radius: 10%;
-    object-fit: cover;
-    margin-bottom: 5px;
-  }
-  .navmenu a, .navmenu a:focus{
-    position: static;
-  color: var(--nav-dropdown-color);
-  font-family: var(--nav-font);
-  font-size: 10px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  white-space: nowrap;
-  transition: 0.3s;
-
-  }
-  .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
-    display: none;
-    font-family: bootstrap-icons !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: -.125em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.upload-trigger {
-  position: relative;
-  left: 117%;
-  border-radius: 15px;
-  background-color: #000000;
-  color: white;
-  font-size: 48px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 300px; /* Optional: Set a width */
-  height: 300px; /* Optional: Set a height */
-  text-align: center; /* Center text content */
-  display: grid;
-}
-.about p {
-  text-align: end;
-  font-size: 20px;
-  color: var(--contrast-color);
-}
-
-html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
-  position: relative;
-  /* width: 100%; */
-  opacity: 1;
-  -webkit-transform: translateZ(0) scale(1);
-  transform: translateZ(0) scale(1);
-}
-.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
-  display: inline-block;
-  font-family: bootstrap-icons !important;
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.button{
-  background-color: #ffffff;
-    color: white;
-    border: none;
-    padding: 10px 2px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-bottom: 20PX;
-
-    transition: background-color 0.3s ease;
-}
-
-.button-container {
-  display: flex;
-  justify-content: flex-end; /* Aligns content to the right */
-  padding: 20px; /* Adds spacing around the button */
-}
-
-.right-button {
-  position: absolute; /* Positioning relative to the container */
-  bottom: -27%; /* Distance from the bottom of the container */
-  left: 80%; /* Distance from the left of the container */
-  background-color: #0daa1a; /* Button color */
-  color: #ffffff; /* Text color */
-  border: none;
-  padding: 20px 40px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.right-button:hover {
-  background-color: #74b9fd; /* Darker shade on hover */
-}
-.navlogo{
-  position: relative;
-  width: 40%;
-  top: 5px;
-  right: 140%;
-}
-
-.logo-container {
-  position: relative;
-  left: 75%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-
-
 }
 
 @media only screen and (min-width: 1400px) {
@@ -4711,6 +4580,7 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   }
 
   .middle-text{
+    left: -145px;
     font-family: 'DroidArabicKufiRegular';
     font-weight: bold;
     position: relative;
@@ -4730,7 +4600,7 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
   .logo-container img{
     position: relative;
     left: 20px;
-    width: 70%;
+    width: 40%;
     height: 40%;
     border-radius: 10%;
     object-fit: cover;
@@ -4824,8 +4694,8 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 
 .right-button {
   position: absolute; /* Positioning relative to the container */
-  bottom: -24%; /* Distance from the bottom of the container */
-  left: 97%; /* Distance from the left of the container */
+  bottom: -14%; /* Distance from the bottom of the container */
+  left: 82%; /* Distance from the left of the container */
   background-color: #0daa1a; /* Button color */
   color: #ffffff; /* Text color */
   border: none;
@@ -4841,14 +4711,14 @@ html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
 }
 .navlogo{
   position: relative;
-  width: 30%;
+  width: 65%;
   top: 5px;
-  right: 135%;
+  right: 245%;
 }
 
 .logo-container {
   position: relative;
-  left: 92%;
+  left: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
