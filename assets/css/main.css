@@ -3208,17 +3208,17 @@ section, .section {
 }
 
 .right-button {
-  position: absolute; /* Positioning relative to the container */
-  bottom: -27%; /* Distance from the bottom of the container */
-  left: 1157px; /* Distance from the left of the container */
-  background-color: #0daa1a; /* Button color */
-  color: #ffffff; /* Text color */
-  border: none;
-  padding: 10px 10px;
-  font-size: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: -23%;
+    left: 69%;
+    background-color: #0daa1a;
+    color: #ffffff;
+    border: none;
+    padding: 0px 2px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .right-button:hover {
@@ -3227,13 +3227,13 @@ section, .section {
 
 .navlogo{
   position: relative;
-  width: 40%;
+  width: 81%;
   top: 5px;
-  right: 117%;
+  right: 213%;
 }
 
-
 }
+
 
 @media only screen and (min-width: 768px) {
   .tab{
@@ -3328,7 +3328,7 @@ section, .section {
   -moz-osx-font-smoothing: grayscale;
 }
 .button{
-  background-color: #ffffff;
+    background-color: #ffffff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -3336,7 +3336,6 @@ section, .section {
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 20PX;
-
     transition: background-color 0.3s ease;
 }
 
@@ -3371,10 +3370,10 @@ section, .section {
   right: 220%;
 }
 
-
-
-
 }
+
+
+
 
 @media only screen and (max-width: 767px) {
   .tab{
